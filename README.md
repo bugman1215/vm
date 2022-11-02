@@ -1,6 +1,4 @@
 # 文言文翻译及排版
-## Download txt from gutenberg
-
 ## Download txt file from Gutenberg
  
 ## change path in main.py and run (also need to create a new text file to save the translation)
