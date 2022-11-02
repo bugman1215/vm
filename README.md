@@ -1,18 +1,37 @@
 # 古文翻译并排版
 ## Set up running environment 
 I used windows but ubuntu is fine大学生哪有不疯的
-## Download txt file from Gutenberg
-
-
-## change path in main.py and run (also need to create a new text file to save the translation)
-
-Line6 : f = open("west.txt", encoding="utf-8")
-Line46: Note = open('westtranslate.txt', mode='w')
-~~~ 
-
+## Download project
+### Download txt file from Gutenberg
 ~~~
-## Preprocess txt files
-At first I tried to compile the original book and the translation individually using \switchcolumn only once, then as the text volume grew I came to realize that latex compilation had limits on too many floats. Therefore I did python script to merge 2 txt files together, chapter to chapter to avoid the problem.  
-## Compile in latex until you get the book. (For longer books it might take a while)
+wget -w 2 -m -H "http://www.gutenberg.org/robot/harvest?filetypes[]=txt"
+~~~
+![Gutenberg](https://user-images.githubusercontent.com/71434769/199416478-040bccfd-9c6d-405d-a078-01ec70ec8ea4.png)
+### Download project
+~~~ 
+git clone https://github.com/bugman1215/vm/
+~~~
+
+## create new txt file to save the translation, change file path and run (optional)
+~~~ 
+cd vm
+cat >bookname_translate.txt
+vi main.py
+~~~
+### change file path as below suggests
+
+Line6 : f = open("bookname.txt", encoding="utf-8")
+Line46: Note = open('bookname_translate.txt', mode='w')
+
+
+## Preprocessing
+### txt files
+### install fonts and packages
+
+At first I tried to compile the original book and the translation individually using \switchcolumn only once, then as the text volume grew I came to realize that latex compilation had limits on too many floats. Therefore I did python script to merge 2 txt files together, chapter to chapter to avoid the problem.
+
+## Compile in latex
+## Save as .pdf
+
 
 
