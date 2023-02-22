@@ -17,7 +17,7 @@ Another dataset that we found but not yet trained on consists of both digital me
 To preprocess the dataset, we applied the normalization to stitch with the ResNet normalization on real-world images.
 
 ## About model and experiment
-For detailed code see WaterMeters_detection.ipynb.
+For detailed code see watermeters-detection.ipynb.
 
 ## Reference
 * [Fasterrcnn_resnet50_fpn](https://aistudio.baidu.com/aistudio/datasetdetail/157981)
