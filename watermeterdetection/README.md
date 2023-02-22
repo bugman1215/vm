@@ -1,6 +1,8 @@
 # Water Meter Detection
 ## Background
-Instrument reading detection is very important 
+Nowadays, industrial instruments are becoming increasingly functional and play an increasingly important role in the industry. With the continuous integration and deepening of electronic information and modern industry, industrial production is gradually developing towards automation and intelligence. IoT-based instrument reading is widely used, but this method is only applicable to industrial instruments with communication interfaces for reading. In the current industrial life, there are still many traditional industrial meters without communication interfaces, which are mostly read manually. However, the manual reading of the meter is a large and inefficient workload, which can easily cause visual fatigue and thus lead to errors in the values read.
+
+Industrial meters at this stage can be divided into pointer meters and digital meters according to the type of dial. The experiment mainly used water meter readings, which is a category of digital meters, and was able to obtain digitaal readings from the original images using a neural network based method.
 ## Requirements
 * Neural Network based model
 * Python and PyTorch are required in the experiment
