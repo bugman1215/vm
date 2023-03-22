@@ -52,7 +52,7 @@ length = len(ls)
 while i < length:
     Note.writelines(inference(ls[i]))
     Note.write('\n')
-    print(inference(ls[i]))
+    # print(inference(ls[i]))
     i = i + 1
 f.close()
 
