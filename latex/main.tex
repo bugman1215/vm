@@ -1,0 +1,66 @@
+\documentclass[fontset=none, punct=kaiming]{ctexart}
+\usepackage[UTF8]{ctex}
+\usepackage{paracol}
+\columnratio{0.49}           % 栏宽比例
+\setlength{\columnsep}{1em}  % 栏间距
+
+\usepackage{geometry}
+\geometry{hmargin=2.54cm, vmargin=3.18cm}
+
+\usepackage{indentfirst}
+\usepackage{lipsum}
+\usepackage{zhlipsum}
+\usepackage{fontspec}           % mainfont
+\usepackage{xeCJK}              % Chinese fonts
+% 中西文均适用思源宋体
+%\setCJKmainfont{Source Han Serif SC}
+%\setmainfont{Source Han Serif SC}[CharacterWidth=AlternateProportional]{SourceHanSerifSC-Regular.ttf}
+
+%漢字自動注音
+\usepackage{xpinyin}
+%漢字注音設置,font =\ubufont
+\xpinyinsetup{ratio = .6,multiple={\color{black}}}
+%制作诗歌显示环境
+\usepackage{tcolorbox}
+
+%%%%%%% Font Setup %%%%%%%%%%%%%
+% https://www.overleaf.com/learn/latex/Questions/Which_OTF_or_TTF_fonts_are_supported_via_fontspec%3F
+\setmainfont[]{Georgia}  % PT Serif
+\setsansfont[]{PT Sans}
+\setmonofont[]{./fonts/UbuntuMono-Regular.ttf}
+\xeCJKsetup{AutoFallBack, CJKmath=true}
+%\setCJKmainfont[]{Noto Serif TC}
+\setCJKmainfont[]{Noto Sans SC}
+%\setCJKsansfont{Noto Sans TC}
+%\setCJKmonofont[]{Noto Sans Mono CJK TC}
+% Custom fonts
+% \setCJKmainfont[Path=fonts/,AutoFakeBold=2.5,AutoFakeSlant=.3]{kaiti}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newfontfamily\myfontc[]{Noto Sans SC}
+\newfontfamily\myfontt[]{Noto Serif TC}
+
+% 其他样式设置
+\pagestyle{plain}
+\setlength{\parskip}{.5ex plus 1pt}
+
+\title{西游记(1-22回)}
+%\author{}
+\date{2022年10月}
+
+% 来源：https://en.wikisource.org/wiki/Translation:Call_to_Arms_(Lu_Xun)/A_Madman%27s_Diary
+\extrafloats{200}
+
+\begin{document}
+\maketitle
+
+
+\begin{paracol}{2}
+\input{westmerged1-22.tex}
+\end{paracol}
+
+
+%\begin{paracol}{2}[\section{}]
+%\end{paracol}
+
+\end{document}
