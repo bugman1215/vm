@@ -34,6 +34,7 @@ python main.py
 ### 2.3 merge 2 files
 change file_path as above suggests
 ~~~
+cat >bookname_merge.py
 python merge.py
 ~~~
 ## 3 Compile in latex
